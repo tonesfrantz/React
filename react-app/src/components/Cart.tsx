@@ -1,20 +1,19 @@
 import React from 'react';
 
 interface Props {
-    cartItems: string[];
-    onClear: () => void;
+    cart: any[];
 }
-
-const Cart = ({ cartItems, onClear }: Props) => {
+const Cart = ({ cart }: Props) => {
     return (
         <>
             <div>Cart</div>
             <ul>
-                {cartItems.map((item) => (
-                    <li key={item}>{item}</li>
-                ))}
+                {cart.map((item) => {
+                    {
+                        <li></li>;
+                    }
+                })}
             </ul>
-            <button onClick={onClear}>Clear</button>
         </>
     );
 };
